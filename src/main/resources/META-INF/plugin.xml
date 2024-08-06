@@ -2,17 +2,25 @@
 <idea-plugin>
     <id>com.github.avayne2.uuidgenerator</id>
     <name>uuid-generator</name>
-    <vendor>avayne2</vendor>
+    <vendor>AvaYnE</vendor>
 
     <depends>com.intellij.modules.platform</depends>
 
-    <resource-bundle>messages.MyBundle</resource-bundle>
+    <resource-bundle>messages.Bundle</resource-bundle>
 
     <extensions defaultExtensionNs="com.intellij">
-        <toolWindow factoryClass="com.github.avayne2.uuidgenerator.toolWindow.MyToolWindowFactory" id="MyToolWindow"/>
+        <toolWindow factoryClass="com.github.avayne2.uuidgenerator.toolWindow.ToolWindowFactory" id="UUID Generator" icon="com.github.avayne2.uuidgenerator.Icons.ToolWindow"/>
+        <notificationGroup id="UUID Generator Notifications" displayType="BALLOON" />
     </extensions>
 
-    <applicationListeners>
-        <listener class="com.github.avayne2.uuidgenerator.listeners.MyApplicationActivationListener" topic="com.intellij.openapi.application.ApplicationActivationListener"/>
-    </applicationListeners>
+    <actions>
+        <action id="com.github.avayne2.uuidgenerator.GenerateUUID"
+                class="com.github.avayne2.uuidgenerator.actions.GenerateUUIDAction"
+                text="Generate UUID"
+                description="Generates a random UUID">
+            <add-to-group group-id="ToolsMenu" anchor="last"/>
+            <keyboard-shortcut keymap="$default" first-keystroke="ctrl alt G"/>
+        </action>
+    </actions>
+
 </idea-plugin>
