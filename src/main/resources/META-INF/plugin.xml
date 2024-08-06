@@ -4,14 +4,12 @@
     <name>uuid-generator</name>
     <vendor>AvaYnE</vendor>
 
-    <description>Plugin to generate UUIDs. Can be generated from a ToolWindow or with a Shortcut</description>
-
     <depends>com.intellij.modules.platform</depends>
 
     <resource-bundle>messages.Bundle</resource-bundle>
 
     <extensions defaultExtensionNs="com.intellij">
-        <toolWindow factoryClass="com.github.avayne2.uuidgenerator.toolWindow.ToolWindowFactory" id="UUID Generator"/>
+        <toolWindow factoryClass="com.github.avayne2.uuidgenerator.toolWindow.ToolWindowFactory" id="UUID Generator" icon="com.github.avayne2.uuidgenerator.Icons.ToolWindow"/>
         <notificationGroup id="UUID Generator Notifications" displayType="BALLOON" />
     </extensions>
 
