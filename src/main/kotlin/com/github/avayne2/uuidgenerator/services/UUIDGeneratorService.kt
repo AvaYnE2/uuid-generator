@@ -6,8 +6,8 @@ import java.awt.datatransfer.StringSelection
 import java.util.UUID
 
 object UUIDGeneratorService {
-    fun generateUUID(): String = UUID.randomUUID().toString()
-    fun copyToClipboard(project: Project,text: String) {
+    fun generateUUIDV4(): String = UUID.randomUUID().toString()
+    fun copyToClipboard(project: Project, text: String) {
         val stringSelection = StringSelection(text)
         Toolkit.getDefaultToolkit().systemClipboard.setContents(stringSelection, null)
         NotificationService.notifyInfo(project, text)
