@@ -11,7 +11,7 @@ class PluginTest : BasePlatformTestCase() {
 
         val service = UUIDGeneratorService
 
-        assertNotSame(service.generateUUID(), service.generateUUID())
+        assertNotSame(service.generateUUIDV4(), service.generateUUIDV4())
     }
 
     override fun getTestDataPath() = "src/test/testData"

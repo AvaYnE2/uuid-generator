@@ -36,7 +36,7 @@ class ToolWindowFactory : ToolWindowFactory {
             add(textField)
             add(JButton(Bundle.message("generate")).apply {
                 addActionListener {
-                    textField.text = service.generateUUID()
+                    textField.text = service.generateUUIDV4()
                 }
             })
 

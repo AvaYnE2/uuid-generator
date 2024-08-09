@@ -20,6 +20,7 @@
                 description="Generates a random UUID">
             <add-to-group group-id="ToolsMenu" anchor="last"/>
             <keyboard-shortcut keymap="$default" first-keystroke="ctrl alt G"/>
+            <keyboard-shortcut keymap="Mac OS X" first-keystroke="alt meta G"/>
         </action>
     </actions>
 
