@@ -4,22 +4,58 @@
 [![Version](https://img.shields.io/jetbrains/plugin/v/25057-uuid-generator.svg)](https://plugins.jetbrains.com/plugin/25057-uuid-generator)
 [![Downloads](https://img.shields.io/jetbrains/plugin/d/25057-uuid-generator.svg)](https://plugins.jetbrains.com/plugin/25057-uuid-generator)
 
-## Template ToDo list
-- [x] Create a new [IntelliJ Platform Plugin Template][template] project.
-- [x] Get familiar with the [template documentation][template].
-- [x] Adjust the [pluginGroup](./gradle.properties) and [pluginName](./gradle.properties), as well as the [id](./src/main/resources/META-INF/plugin.xml) and [sources package](./src/main/kotlin).
-- [x] Adjust the plugin description in `README` (see [Tips][docs:plugin-description])
-- [x] Review the [Legal Agreements](https://plugins.jetbrains.com/docs/marketplace/legal-agreements.html?from=IJPluginTemplate).
-- [x] [Publish a plugin manually](https://plugins.jetbrains.com/docs/intellij/publishing-plugin.html?from=IJPluginTemplate) for the first time.
-- [x] Set the `MARKETPLACE_ID` in the above README badges. You can obtain it once the plugin is published to JetBrains Marketplace.
-- [x] Set the [Plugin Signing](https://plugins.jetbrains.com/docs/intellij/plugin-signing.html?from=IJPluginTemplate) related [secrets](https://github.com/JetBrains/intellij-platform-plugin-template#environment-variables).
-- [x] Set the [Deployment Token](https://plugins.jetbrains.com/docs/marketplace/plugin-upload.html?from=IJPluginTemplate).
-- [x] Click the <kbd>Watch</kbd> button on the top of the [IntelliJ Platform Plugin Template][template] to be notified about releases containing new features and fixes.
+A JetBrains IDE plugin for generating UUIDs quickly and easily.
 
-<!-- Plugin description -->
-This plugin generates UUIDs. It can be used to generate UUIDs for various purposes, such as testing, debugging, and more.
-UUIDs can be generated within the tool window, or by using the shortcut `Ctrl + Alt + G`.
-<!-- Plugin description end -->
+## Features
+
+- Generate UUIDs for various purposes such as testing, debugging, and more
+- Access via a dedicated tool window
+- Quick generation using keyboard shortcuts
+
+## Usage
+
+You can generate UUIDs in two ways:
+
+1. Using the tool window
+2. Using keyboard shortcuts:
+  - Windows/Linux: `Ctrl + Alt + G`
+  - Mac: `Option + Command + G`
+
+## Installation
+
+### Using IDE Built-in Plugin System
+
+1. Go to `Settings/Preferences` > `Plugins` > `Marketplace`
+2. Search for "uuid-generator"
+3. Click `Install`
+
+### Using JetBrains Marketplace
+
+1. Visit the [UUID Generator plugin page](https://plugins.jetbrains.com/plugin/25057-uuid-generator)
+2. Click the `Install to ...` button for your IDE
+
+### Manual Installation
+
+1. Download the [latest release](https://github.com/AvaYnE2/uuid-generator/releases/latest)
+2. In your IDE, go to `Settings/Preferences` > `Plugins` > `⚙️` > `Install plugin from disk...`
+3. Select the downloaded file
+
+## Development
+
+This plugin is based on the [IntelliJ Platform Plugin Template](https://github.com/JetBrains/intellij-platform-plugin-template).
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
+## Support
+
+If you encounter any problems or have any suggestions, please [open an issue](https://github.com/AvaYnE2/uuid-generator/issues).
+
 
 ## Installation
 
@@ -42,6 +78,14 @@ UUIDs can be generated within the tool window, or by using the shortcut `Ctrl + 
 
 
 ---
+
+<!-- Plugin description -->
+This plugin generates UUIDs. It can be used to generate UUIDs for various purposes, such as testing, debugging, and more.
+UUIDs can be generated within the tool window, or by using the following shortcuts:
+- Windows/Linux: `Ctrl + Alt + G`
+- Mac: `Option + Command + G`
+<!-- Plugin description end -->
+
 Plugin based on the [IntelliJ Platform Plugin Template][template].
 
 [template]: https://github.com/JetBrains/intellij-platform-plugin-template
