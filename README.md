@@ -80,7 +80,7 @@ If you encounter any problems or have any suggestions, please [open an issue](ht
 ---
 
 <!-- Plugin description -->
-This plugin generates UUIDs. It can be used to generate UUIDs for various purposes, such as testing, debugging, and more.
+This plugin generates UUIDs Version 4. It can be used to generate UUIDs for various purposes, such as testing, debugging, and more.
 UUIDs can be generated within the tool window, or by using the following shortcuts:
 - Windows/Linux: `Ctrl + Alt + G`
 - Mac: `Option + Command + G`
